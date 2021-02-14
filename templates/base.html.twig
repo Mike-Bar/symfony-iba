@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Symfony IBA -
+			{% block title %}Symfony IBA
+			{% endblock %}
+		</title>
+		{# Run `composer require symfony/webpack-encore-bundle`
+				           and uncomment the following Encore helpers to start using Symfony UX #}
+		{% block stylesheets %}
+			{#{{ encore_entry_link_tags('app') }}#}
+			<link rel="stylesheet" href="/css/style.css">
+		{% endblock %}
+
+	</head>
+	<body>
+		<!--===HEADER===-->
+		<header>
+			<div class="header-footer">
+				<a href="{{ path('homepage') }}">
+					<div id="logo"></div>
+				</a>
+				<div class="right_nav_section">
+					<ul>
+						<li><a href="">Connexion</a></li>
+					</ul>
+				</div>
+				<nav>
+					<ul>
+						<li><a href="{{ path('homepage') }}">Accueil</a></li>
+						<li><a href="">Menu</a></li>
+						<li><a href="">Menu</a></li>
+						<li><a href="">Menu</a></li>
+						<li><a href="">Menu</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		{% block body %}{% endblock %}
+		{% block javascripts %}
+			{#{{ encore_entry_script_tags('app') }}#}
+		{% endblock %}
+	</body>
+</html>
