@@ -35,6 +35,9 @@ body{
     margin-right: auto;
     /*border: 1px solid;*/
 }
+.right_nav_section li a{
+    padding: 5px 4px 0px 4px;
+}
 
 /*===Navigation===*/
 nav ul li {
@@ -80,6 +83,10 @@ nav {
 /*===CONTENT===*/
 #box{
     height: 1000px;
+}
+.container{
+    width: 1200px;
+    margin: auto;
 }
 
 /*===FOOTER===*/
